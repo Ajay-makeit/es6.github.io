@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>ES6 Rules</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-center my-5">ES6 Rules</h1>
+
+      <!-- Template Literals Card -->
+      <div class="card mb-3">
+        <div class="card-header">
+          Template Literals
+        </div>
+        <div class="card-body">
+          <p>Template literals are string literals that allow for embedded expressions. They are denoted by the backtick (`) character, and can contain placeholders in the form of ${expression}.</p>
+          <pre><code class="language-javascript">
+const name = 'John';
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // "Hello, John!"
+          </code></pre>
+        </div>
+      </div>
+
+      <!-- Code Runner Card -->
+      <div class="card mb-3">
+        <div class="card-header">
+          Code Runner
+        </div>
+        <div class="card-body">
+          <div id="template-literal-runner"></div>
+          <button class="btn btn-primary" onclick="runTemplateLiteralCode()">Run Code</button>
+        </div>
+      </div>
+
+      <!-- Add additional ES6 rule cards here -->
+      <!-- Arrow Functions Card -->
+<div class="card mb-3">
+    <div class="card-header">
+      Arrow Functions
+    </div>
+    <div class="card-body">
+      <p>Arrow functions are a shorthand syntax for writing functions in JavaScript. They have a shorter syntax compared to regular functions and do not bind their own `this` value.</p>
+      <pre><code class="language-javascript">
+  const add = (a, b) => a + b;
+  console.log(add(1, 2)); // 3
+      </code></pre>
+    </div>
+  </div>
+  
+  <!-- Code Runner Card -->
+  <div class="card mb-3">
+    <div class="card-header">
+      Code Runner
+    </div>
+    <div class="card-body">
+      <div id="arrow-function-runner"></div>
+      <button class="btn btn-primary" onclick="runArrowFunctionCode()">Run Code</button>
+    </div>
+  </div>
+  
+  <!-- Add additional ES6 rule cards here -->
+<!-- Spread Operator Card -->
+<div class="card mb-3">
+    <div class="card-header">
+      Spread Operator
+    </div>
+    <div class="card-body">
+      <p>The spread operator allows an iterable (such as an array) to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected. It is denoted by three dots (...).</p>
+      <pre><code class="language-javascript">
+  const numbers = [1, 2, 3];
+  console.log(Math.max(...numbers)); // 3
+      </code></pre>
+    </div>
+  </div>
+  
+  <!-- Code Runner Card -->
+  <div class="card mb-3">
+    <div class="card-header">
+      Code Runner
+    </div>
+    <div class="card-body">
+      <div id="spread-operator-runner"></div>
+      <button class="btn btn-primary" onclick="runSpreadOperatorCode()">Run Code</button>
+    </div>
+  </div>
+  
+  <!-- Destructuring Assignment Card -->
+  <div class="card mb-3">
+    <div class="card-header">
+      Destructuring Assignment
+    </div>
+    <div class="card-body">
+      <p>Destructuring assignment allows for extracting data from arrays and objects into distinct variables. It is often used in combination with the spread operator (...) to easily extract data from arrays and objects.</p>
+      <pre><code class="language-javascript">
+  const person = { name: 'John', age: 30 };
+  const { name, age } = person;
+  console.log(name); // "John"
+  console.log(age); // 30
+      </code></pre>
+    </div>
+  </div>
+  
+  <!-- Code Runner Card -->
+  <div class="card mb-3">
+    <div class="card-header">
+      Code Runner
+    </div>
+    <div class="card-body">
+      <div id="destructuring-assignment-runner"></div>
+      <button class="btn btn-primary" onclick="runDestructuringAssignmentCode()">Run Code</button>
+    </div>
+  </div>
+  
+  <!-- Add additional ES6 rule cards here -->    
+</div>
+
+<!-- MDN References Card -->
+<div class="card mb-3">
+    <div class="card-header">
+      MDN References
+    </div>
+    <div class="card-body">
+      <p>For more information on ES6 rules, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla">MDN documentation</a>.</p>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-light py-3 mt-5">
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center">
+        <div class="col-auto mx-3">
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="col-auto mx-3">
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="col-auto mx-3">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-jZLaiA0o0vZ5I1ZpGkcK0dZz2vX9YgDzjJxMmZnCn8kp1ZIv8FbJjdZO4z+E5bJi" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+  </body>
+</html>
